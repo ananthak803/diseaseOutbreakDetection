@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="flex items-center justify-center p-12">
+
+      <div class="mx-auto w-full max-w-[550px] bg-white">
+
+        <form class="border-black border-1 px-5 py-8" id="form" action="/" method="post">
+            <!-- name -->
+          <div class="mb-5">
+            <label
+              for="name"
+              class="mb-3 block text-base font-medium text-[#07074D]"
+            >
+              Full Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full Name"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            />
+          </div>
+
+          <!-- phone number -->
+          <div class="mb-5">
+            <label
+              for="phone"
+              class="mb-3 block text-base font-medium text-[#07074D]"
+            >
+              Phone Number
+            </label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Enter your phone number"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            />
+          </div>
+
+          <!-- age and gender -->
+          <div class="-mx-3 flex flex-wrap">
+            <div class="w-full px-3 sm:w-1/2">
+              <div class="mb-5">
+                <label
+                  for="age"
+                  class="mb-3 block text-base font-medium text-[#07074D]"
+                >
+                  Age
+                </label>
+                <input
+                  type="number"
+                  name="age"
+                  id="age"
+                  placeholder="Enter your age"
+                  class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                />
+              </div>
+            </div>
+            <div class="w-full px-3 sm:w-1/2">
+              <div class="mb-5">
+                <label
+                  for="gender"
+                  class="mb-3 block text-base font-medium text-[#07074D]"
+                >
+                  Gender
+                </label>
+                <select
+                  type="radio"
+                  name="gender"
+                  id="gender"
+                  class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                >
+                  <option value="">Select gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- date and location -->
+          <div class="-mx-3 flex flex-wrap">
+            <div class="w-full px-3 sm:w-1/2">
+              <div class="mb-5">
+                <label
+                  for="date"
+                  class="mb-3 block text-base font-medium text-[#07074D]"
+                >
+                  Date
+                </label>
+                <input
+                  type="date"
+                  name="date"
+                  id="date"
+                  class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                />
+              </div>
+            </div>
+            <div class="w-full px-3 sm:w-1/2">
+              <div class="mb-5">
+                <label
+                  for="location"
+                  class="mb-3 block text-base font-medium text-[#07074D]"
+                >
+                  Location
+                </label>
+                <input
+                  type="text"
+                  name="location"
+                  id="location"
+                  placeholder="Enter location"
+                  class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- symptoms -->
+          <div class="mb-5">
+            <label
+              for="symptoms"
+              class="mb-3 block text-base font-medium text-[#07074D]"
+            >
+              Symptoms
+            </label>
+            <input
+              type="text"
+              name="symptoms"
+              id="symptoms"
+              placeholder="Enter all symptoms"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            />
+          </div>
+
+          <!-- diagnosis -->
+          <div class="mb-5">
+            <label for="diagnosis" class="mb-3 block text-base font-medium text-[#07074D]">Diagnosis</label>
+            <select
+            name="diagnosis"
+            id="diagnosis"
+            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            >
+            <option value="">Select Diagnosis</option>
+            <option value="Malaria">Malaria</option>
+            <option value="Pneumonia">Pneumonia</option>
+            <option value="Cholera">Cholera</option>
+            <option value="Dengue">Dengue</option>
+            <option value="Tuberculosis">Tuberculosis</option>
+            <option value="Influenza">Influenza</option>
+            <option value="COVID-19">COVID-19</option>
+            <option value="Other">Other (Specify Below)</option>
+            </select>
+
+            <label for="other-diagnosis" class="my-3 block text-base font-medium text-[#07074D]">If "Other", please specify</label>
+            <textarea
+            name="other-diagnosis"
+            id="other-diagnosis"
+            placeholder="Enter additional details or diagnosis here"
+            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            rows="3"
+            ></textarea>
+
+          </div>
+
+          <!-- submit button -->
+          <div>
+            <button
+              class="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
