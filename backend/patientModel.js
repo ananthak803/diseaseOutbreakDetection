@@ -19,7 +19,7 @@ const patientSchema=new mongoose.Schema({
         type:String,
     },
     symptoms:{
-        type:String,
+        type:[String],
     },
     diagnosis:{
         type:String,
